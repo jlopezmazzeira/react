@@ -1,0 +1,47 @@
+npm install -g create-react-app
+
+create-react-app practica
+
+npm start
+
+Para resaltar los errores con atom debemos hacer lo siguiente:
+1. Debemos instalar linter-eslint
+2. crear el archivo .eslintrc y colocar el siguiente contenido:
+  a. { "extends": "react-app" }
+
+3. Hay 3 formas de crear compomentes en react
+  a.function Hello(props) {
+      return <p> {props.text} <strong>Udemy</strong>.</p>;
+    }
+    //Donde props, son las propiedades o atributos del compomente
+
+  b. const Hello = (props) => <p> {props.text} <strong>Udemy</strong>.</p>;
+
+  c. class Hello extends Component{
+        render(){
+          return <p> {this.props.text} <strong>Udemy</strong>.</p>;
+        }
+      }
+
+//Configuración Proyecto
+1. create-react-app search-Movies
+2. npm install bulma --save --save-exact
+3. npm install react-router-dom
+  3.1 Debemos configurar el index.js
+  3.2 import { BrowserRouter } from 'react-router-dom';
+  3.3 ReactDOM.render(
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>,
+        document.getElementById('root')
+      );
+  3.4 En App.js:
+    3.4.1 import { Switch, Route } from 'react-router-dom';
+    3.4.2 <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/detail/:id' component={Detail} />
+          </Switch>
+  3.5 Los enlaces con rutas se realizan de la siguiente forma:
+    3.5.1 import { Link } from 'react-router-dom';
+    3.5.2 <Link to={`/detail/${id}`} >Detalle</Link>
+4. npm start

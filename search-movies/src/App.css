@@ -1,0 +1,46 @@
+.App {
+  padding-top: 36px;
+  text-align: center;
+}
+
+p.subtitle{
+    margin-bottom:0px;
+}
+
+.card{
+  border-radius: 10px;
+  box-shadow: none !important;
+}
+
+.image img{
+    height: 650px !important;
+    width: 600px !important;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.SearchForm-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.MoviesList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.MoviesList-item{
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  width: 30%;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.text-right{
+  text-align: right;
+}
